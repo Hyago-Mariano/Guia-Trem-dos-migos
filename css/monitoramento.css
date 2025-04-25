@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dashboard {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+svg {
+  margin: 0 auto;
+  display: block;
+}
+
+.indicadores {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.indicador {
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.finalizadas {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.programadas {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.pendentes {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.custo {
+  text-align: center;
+  background-color: #e1ecf7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.custo p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003366;
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .indicador {
+    font-size: 0.95rem;
+  }
+
+  .custo p {
+    font-size: 1.6rem;
+  }
+}

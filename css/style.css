@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    background-color: red;
+    padding: 10px;
+    position: relative;
+    height: 60px;
+}
+
+#navbar .menu {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+/* Barra lateral */
+#lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: auto;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+#lateral ul {
+    list-style: none;
+}
+
+#lateral ul li {
+    padding: 10px 20px;
+}
+
+#lateral ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+}
+
+#lateral ul li a:hover {
+    background-color: #333;
+}
+
+/* Botão de fechar */
+.fechar {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Classe opcional para facilitar abertura/fechamento */
+#lateral.aberto {
+    width: 250px;
+}
