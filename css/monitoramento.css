@@ -1,89 +1,48 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-.dashboard {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+.flexivel {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
-h2 {
-  text-align: center;
-  font-size: 1.4rem;
-  margin: 10px 0;
+#localizacaofrota {
+  padding: 100px;
+  margin: 10px;
+  background-color: red;
+  box-sizing: border-box;
+  border-radius: 35px;
 }
 
-svg {
-  margin: 0 auto;
-  display: block;
+#alerta {
+  padding: 100px;
+  margin: 10px;
+  background-color: red;
+  box-sizing: border-box;
+  border-radius: 35px;
 }
 
-.indicadores {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.indicador {
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-align: center;
-  font-size: 1rem;
-}
-
-.finalizadas {
-  background-color: #d4edda;
-  color: #155724;
-}
-
-.programadas {
-  background-color: #fff3cd;
-  color: #856404;
-}
-
-.pendentes {
-  background-color: #f8d7da;
-  color: #721c24;
-}
-
-.custo {
-  text-align: center;
-  background-color: #e1ecf7;
+#manutencoesandamento {
   padding: 20px;
-  border-radius: 8px;
+  margin: 10px;
+  background-color: red;
+  border-radius: 35px;
 }
 
-.custo p {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #003366;
+#gastototal {
+  padding: 20px;
+  margin: 10px;
+  background-color: red;
+  box-sizing: border-box;
+  border-radius: 35px;
 }
 
-@media (max-width: 480px) {
-  .dashboard {
-    padding: 15px;
-  }
+#manutencoesprogramada {
+  padding: 100px;
+  margin: 10px;
+  background-color: red;
+  border-radius: 35px;
+}
 
-  h2 {
-    font-size: 1.2rem;
-  }
-
-  .indicador {
-    font-size: 0.95rem;
-  }
-
-  .custo p {
-    font-size: 1.6rem;
-  }
+#solicitarmanutencao {
+  padding: 100px;
+  margin: 10px;
+  background-color: red;
+  border-radius: 35px;
 }
