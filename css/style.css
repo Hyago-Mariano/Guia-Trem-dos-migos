@@ -77,3 +77,43 @@
 .chegada {
     margin: 30px;
 }
+
+/* Origem */
+
+.origem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.iconOrigem {
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+}
+
+.iconOrigem img {
+    width: 20px;
+    height: 20px;
+}
+
+.textOrigem {
+    width: 100%;  
+}
+
+.textOrigem input {
+    width: 100%;
+    padding: 10px 10px 10px 35px;
+    border: 1px solid transparent; /* Adicione 'solid' e 'transparent' para manter a consistência */
+    background-color: #4180AB;
+    box-sizing: border-box;
+    color: white; /* Adicionei cor do texto para contrastar com o fundo */
+    outline: none; /* Remove o outline padrão */
+}
+
+
+
+.textOrigem input::placeholder {
+    color: white;
+}

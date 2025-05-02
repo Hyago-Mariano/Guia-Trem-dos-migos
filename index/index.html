@@ -9,7 +9,7 @@
     <title>Guia Trem</title>
 </head>
 
-<body> 
+<body>
     <header>
         <nav id="navbar">
             <img class="menu" src="../imagens/list.png" alt="Abrir menu" onclick="abrir()">
@@ -21,22 +21,45 @@
                     <li><a href="../html/monitoramento.html">Manutenção</a></li>
                     <li><a href="../html/relatorio.html">Relatorios</a></li>
                     <li><a href="../html/dashboard.html">Dashboard Geral</a></li>
-                    <li><a href="../html/Notificação.html">Notificação</a></li>  
+                    <li><a href="../html/Notificação.html">Notificação</a></li>
                 </ul>
             </div>
 
         </nav>
 
 
-<script src="../js/menu.js"></script>
+        <script src="../js/menu.js"></script>
     </header>
     <main>
-        <div class="chegada">
-            <img src="../imagens/gps_15949802.png">
-         <h2>
-            COMO CHEGAR?
-         </h2>
-        </div>
+        <section id="Rotas">
+            <div class="chegada">
+                <img src="../imagens/gps_15949802.png"> <!-- arrumar a foto que não aparece -->
+                <h2>
+                    COMO CHEGAR?
+                </h2>
+            </div>
+
+            <!-- <div class="origem">
+                <div class="icon">
+                    <img src="../imagens/gps_13930558.png">
+                </div>
+                <inut type="text" name="Origem" placeholder="Origem">
+            </div> -->
+
+            <div class="origem">
+                <div class="iconOrigem">
+                    <img src="../imagens/gps.png">
+                </div>
+                <div class="textOrigem">
+                    <input type="text" placeholder="Origem" >
+                </div>
+            </div>
+            <div class="destino"></div>
+
+            <div class="partida"></div>
+            <div class="horario"></div>
+            <div class="busca"></div>
+        </section>
     </main>
     <footer>
 

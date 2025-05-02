@@ -3,5 +3,5 @@ function abrir(){
 }
 
 function fechar(){
-    document.getElementById("lateral").classList.remove("aberto ")
+    document.getElementById("lateral").classList.remove("aberto")
 }
