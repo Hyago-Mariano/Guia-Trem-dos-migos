@@ -39,22 +39,43 @@
                 </h2>
             </div>
 
-            <!-- <div class="origem">
-                <div class="icon">
-                    <img src="../imagens/gps_13930558.png">
-                </div>
-                <inut type="text" name="Origem" placeholder="Origem">
-            </div> -->
+            <!-- ORIGEM -->
 
             <div class="origem">
                 <div class="iconOrigem">
                     <img src="../imagens/gps.png">
                 </div>
                 <div class="textOrigem">
-                    <input type="text" placeholder="Origem" >
+                    <select placeholder="ORIGEM">
+                        <option value=" " disabled selected> Selecione a Origem</option>
+                        <optgroup label="Guia Trem">
+                            <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
+                            <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
+                            <option acessivel="true" value="133">Antonio Gianetti Neto (Linha 11 Coral)</option>
+                            <option acessivel="false" value="153">Aracaré (Linha 12 Safira)</option>
+                        </optgroup>
+                    </select>
                 </div>
             </div>
-            <div class="destino"></div>
+
+
+            <!-- DESTINO  -->
+
+            <div class="destino">
+                <div class="iconDestino">
+                    <img src="../imagens/gps.png">
+                </div>
+                <div class="textDestino">
+                    <select placeholder="DESTINO">
+                        <optgroup label="Guia Trem">
+                        <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
+                        <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
+                        <option acessivel="true" value="133">Antonio Gianetti Neto (Linha 11 Coral)</option>
+                        <option acessivel="false" value="153">Aracaré (Linha 12 Safira)</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
 
             <div class="partida"></div>
             <div class="horario"></div>

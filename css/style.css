@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* NAVBAR */
 #navbar {
     background-color: red;
     padding: 10px;
@@ -66,54 +67,114 @@
     cursor: pointer;
 }
 
-/* Classe opcional para facilitar abertura/fechamento */
+/* Classe para menu aberto */
 #lateral.aberto {
     width: 250px;
 }
 
-
 /* MAIN */
-
-.chegada {
-    margin: 30px;
+#Rotas {
+    padding: 20px;
 }
 
-/* Origem */
+.chegada {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.origem {
+.chegada img {
+    width: 30px;
+    height: 30px;
+}
+
+.chegada h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilos para os selects (Origem e Destino) */
+.origem, .destino {
     position: relative;
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 100%;
+    max-width: 400px;
+    margin: 15px 0;
 }
 
-.iconOrigem {
+.iconOrigem, .iconDestino {
     position: absolute;
     left: 10px;
     z-index: 2;
 }
 
-.iconOrigem img {
+.iconOrigem img, .iconDestino img {
     width: 20px;
     height: 20px;
 }
 
-.textOrigem {
-    width: 100%;  
-}
-
-.textOrigem input {
+.textOrigem, .textDestino {
     width: 100%;
-    padding: 10px 10px 10px 35px;
-    border: 1px solid transparent; /* Adicione 'solid' e 'transparent' para manter a consistência */
-    background-color: #4180AB;
-    box-sizing: border-box;
-    color: white; /* Adicionei cor do texto para contrastar com o fundo */
-    outline: none; /* Remove o outline padrão */
 }
 
-
-
-.textOrigem input::placeholder {
+.textOrigem select, .textDestino select {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #4180AB;
     color: white;
+    font-size: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Estilo para o placeholder */
+.textOrigem select option[value=" "][disabled] {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo para os optgroups */
+optgroup {
+    color: #333;
+    font-weight: bold;
+    font-style: normal;
+}
+
+optgroup option {
+    color: white;
+    padding: 8px;
+    background-color: #4180AB;
+}
+
+/* Seta personalizada para o select */
+.textOrigem::after, .textDestino::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    pointer-events: none;
+}
+
+/* Efeito hover */
+.textOrigem select:hover, .textDestino select:hover {
+    background-color: #3a74a0;
+}
+
+/* Efeito focus */
+.textOrigem select:focus, .textDestino select:focus {
+    border-color: #2a5a7a;
+    box-shadow: 0 0 0 2px rgba(65, 128, 171, 0.3);
+}
+
+/* Espaçamento geral */
+#Rotas div {
+    margin: 10px 0;
 }
