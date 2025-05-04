@@ -33,7 +33,7 @@
     <main>
         <section id="Rotas">
             <div class="chegada">
-                <img src="../imagens/gps_15949802.png"> <!-- arrumar a foto que não aparece -->
+                <img src="../imagens/gps_13953734.png"> <!-- arrumar a imagem -->
                 <h2>
                     COMO CHEGAR?
                 </h2>
@@ -47,7 +47,7 @@
                 </div>
                 <div class="textOrigem">
                     <select placeholder="ORIGEM">
-                        <option value=" " disabled selected> Selecione a Origem</option>
+                        <option value=" " disabled selected>-- Selecione a Origem --</option>
                         <optgroup label="Guia Trem">
                             <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
                             <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
@@ -67,19 +67,75 @@
                 </div>
                 <div class="textDestino">
                     <select placeholder="DESTINO">
+                        <option value=" " disabled selected>-- Selecione o Destino --</option>
                         <optgroup label="Guia Trem">
-                        <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
-                        <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
-                        <option acessivel="true" value="133">Antonio Gianetti Neto (Linha 11 Coral)</option>
-                        <option acessivel="false" value="153">Aracaré (Linha 12 Safira)</option>
+                            <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
+                            <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
+                            <option acessivel="true" value="133">Antonio Gianetti Neto (Linha 11 Coral)</option>
+                            <option acessivel="false" value="153">Aracaré (Linha 12 Safira)</option>
                         </optgroup>
                     </select>
                 </div>
             </div>
 
-            <div class="partida"></div>
-            <div class="horario"></div>
-            <div class="busca"></div>
+            <div class="partida-horario">
+                <div class="partida">
+                    <button type="button">PARTIDA</button>
+                </div>
+                <div class="horario">
+                    <select>
+                        <option value=" ">-- Horarios --</option>
+
+                        <!-- Manhã -->
+                        <optgroup label="Manhã">
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                        </optgroup>
+
+                        <!-- Tarde -->
+                        <optgroup label="Tarde">
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </optgroup>
+
+                        <!-- Noite -->
+                        <optgroup label="Noite">
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+
+            <div class="linhas-container">
+                <div class="linha">
+                    <div class="numero" style="background-color: #0078be;">1</div>
+                    <div class="nome">Azul</div>
+                    <div class="status operacao-normal">Operação Normal</div>
+                </div>
+                <div class="linha">
+                    <div class="numero" style="background-color: #00a74e;">2</div>
+                    <div class="nome">Verde</div>
+                    <div class="status operacao-normal">Operação Normal</div>
+                </div>
+                <div class="linha">
+                    <div class="numero" style="background-color: #ee2e24;">3</div>
+                    <div class="nome">Vermelha</div>
+                    <div class="status operacao-normal">Operação Normal</div>
+                </div>
+                <div class="linha">
+                    <div class="numero" style="background-color: #ffd100;">4</div>
+                    <div class="nome">Amarela</div>
+                    <div class="status operacao-normal">Operação Normal</div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>

@@ -178,3 +178,112 @@ optgroup option {
 #Rotas div {
     margin: 10px 0;
 }
+
+.partida-horario{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 15px;
+}
+
+.partida button{
+    padding: 12px 20px;
+    background-color: #4180AB;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.partida button:hover {
+    background-color: #3a74a0;
+}
+
+.horario select{
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius:4px ;
+    background-color: #4180AB;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+}
+
+
+
+.linhas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.linha:hover {
+    transform: translateY(-2px);
+}
+
+.numero {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.nome {
+    flex: 1;
+    font-weight: 600;
+    color: #333;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.operacao-normal {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* Efeito quando o menu está aberto */
+#Rotas.menu-aberto {
+    margin-right: 250px; /* Igual à largura do menu lateral */
+    transition: margin-right 0.3s ease;
+}
+
+#Rotas.menu-aberto .linhas-container {
+    width: calc(100% - 50px); /* Reduz a largura do container */
+    transition: width 0.3s ease;
+}
+
+/* Garante que o conteúdo não fique espremido em telas pequenas */
+@media (max-width: 768px) {
+    #Rotas.menu-aberto {
+        margin-right: 0;
+        transform: translateX(-250px);
+    }
+    
+    #Rotas.menu-aberto .linhas-container {
+        width: 100%;
+    }
+}
