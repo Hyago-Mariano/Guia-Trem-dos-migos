@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=person" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
     <link rel="stylesheet" href="../css/style.css">
 
     <title>Guia Trem</title>
@@ -11,136 +15,29 @@
 
 <body>
     <header>
-        <nav id="navbar">
-            <img class="menu" src="../imagens/list.png" alt="Abrir menu" onclick="abrir()">
+        <section class="login">
 
-            <div id="lateral">
-                <span class="fechar" onclick="fechar()">&times;</span>
-                <ul>
-                    <li><a href="../html/gestao.html">Rotas</a></li>
-                    <li><a href="../html/monitoramento.html">Manutenção</a></li>
-                    <li><a href="../html/relatorio.html">Relatorios</a></li>
-                    <li><a href="../html/dashboard.html">Dashboard Geral</a></li>
-                    <li><a href="../html/Notificação.html">Notificação</a></li>
-                </ul>
+            <div class="content">
+                <h1 class="login-content">- Login -</h1>
+                <h3 class="login-content2"> Guia Trem</h2>
             </div>
 
-        </nav>
-
-
-        <script src="../js/menu.js"></script>
-    </header>
-    <main>
-        <section id="Rotas">
-            <div class="chegada">
-                <img src="../imagens/gps_13953734.png"> <!-- arrumar a imagem -->
-                <h2>
-                    COMO CHEGAR?
-                </h2>
-            </div>
-
-            <!-- ORIGEM -->
-
-            <div class="origem">
-                <div class="iconOrigem">
-                    <img src="../imagens/gps.png">
+            <div class="loginIN">
+                <div class="usuario">
+                    <img src="../imagens/person.png" alt="person">
+                    <input type="text" name="login" id="text">
                 </div>
-                <div class="textOrigem">
-                    <select placeholder="ORIGEM">
-                        <option value=" " disabled selected>-- Selecione a Origem --</option>
-                        <optgroup label="Guia Trem">
-                            <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
-                            <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
-                            <option acessivel="true" value="133">Antonio Gianetti Neto (Linha 11 Coral)</option>
-                            <option acessivel="false" value="153">Aracaré (Linha 12 Safira)</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </div>
-
-
-            <!-- DESTINO  -->
-
-            <div class="destino">
-                <div class="iconDestino">
-                    <img src="../imagens/gps.png">
-                </div>
-                <div class="textDestino">
-                    <select placeholder="DESTINO">
-                        <option value=" " disabled selected>-- Selecione o Destino --</option>
-                        <optgroup label="Guia Trem">
-                            <option acessivel="true" value="155">Aeroporto - Guarulhos (Lina 13 Jade)</option>
-                            <option acessivel="true" value="184">Água Branca (Linha 7 Rubi)</option>
-                            <option acessivel="true" value="133">Antonio Gianetti Neto (Linha 11 Coral)</option>
-                            <option acessivel="false" value="153">Aracaré (Linha 12 Safira)</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </div>
-
-            <div class="partida-horario">
-                <div class="partida">
-                    <button type="button">PARTIDA</button>
-                </div>
-                <div class="horario">
-                    <select>
-                        <option value=" ">-- Horarios --</option>
-
-                        <!-- Manhã -->
-                        <optgroup label="Manhã">
-                            <option value="08:00">08:00</option>
-                            <option value="08:30">08:30</option>
-                            <option value="09:00">09:00</option>
-                            <option value="09:30">09:30</option>
-                            <option value="10:00">10:00</option>
-                        </optgroup>
-
-                        <!-- Tarde -->
-                        <optgroup label="Tarde">
-                            <option value="13:00">13:00</option>
-                            <option value="14:00">14:00</option>
-                            <option value="15:00">15:00</option>
-                            <option value="16:00">16:00</option>
-                        </optgroup>
-
-                        <!-- Noite -->
-                        <optgroup label="Noite">
-                            <option value="18:00">18:00</option>
-                            <option value="19:00">19:00</option>
-                            <option value="20:00">20:00</option>
-                        </optgroup>
-                    </select>
-                </div>
-            </div>
-
-            <div class="linhas-container">
-                <div class="linha">
-                    <div class="numero" style="background-color: #0078be;">1</div>
-                    <div class="nome">Azul</div>
-                    <div class="status operacao-normal">Operação Normal</div>
-                </div>
-                <div class="linha">
-                    <div class="numero" style="background-color: #00a74e;">2</div>
-                    <div class="nome">Verde</div>
-                    <div class="status operacao-normal">Operação Normal</div>
-                </div>
-                <div class="linha">
-                    <div class="numero" style="background-color: #ee2e24;">3</div>
-                    <div class="nome">Vermelha</div>
-                    <div class="status operacao-normal">Operação Normal</div>
-                </div>
-                <div class="linha">
-                    <div class="numero" style="background-color: #ffd100;">4</div>
-                    <div class="nome">Amarela</div>
-                    <div class="status operacao-normal">Operação Normal</div>
+                <div class="password">
+                    <img src="../imagens/senhas.png" alt="senha">
+                    <input type="password" name="password" id="password">
                 </div>
             </div>
 
         </section>
-    </main>
-    <footer>
+    </header>
+    <main>
 
-    </footer>
+    </main>
 </body>
 
 </html>
