@@ -1,0 +1,19 @@
+/* tudo feito aqui pode ser alterado, foi feito apenas para teste. ASS:hyago */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.dashboard-header {
+    background-color: #4180AB;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
