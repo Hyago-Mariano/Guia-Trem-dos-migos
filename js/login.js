@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Verifica as credenciais
         if (login === validCredentials.login && password === validCredentials.password) {
             // Login bem-sucedido - redireciona para a página do técnico
-            window.location.href = '../dashboard/dashboard.html';
+            window.location.href = '../html/dashboard.html';
         } else {
             showError('Login ou senha incorretos. Tente novamente.');
         }
