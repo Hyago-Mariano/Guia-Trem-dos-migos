@@ -1,12 +1,13 @@
 .flex {
     display: flex;
-    
 }
+
 
 .mapa {
     width: 100%;
     margin-bottom: 20px;
 }
+
 
 .mapa img {
     width: 100%;
@@ -15,11 +16,14 @@
 }
 
 
+
+
 .linhas {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
 }
+
 
 body {
     font-family: Arial, sans-serif;
@@ -29,10 +33,12 @@ body {
     background-color: #FFFFFF;
 }
 
+
 h2 {
     color: #4180AB;
     text-align: left;
 }
+
 
 .linha-container {
     display: flex;
@@ -47,20 +53,24 @@ h2 {
     transition: transform 0.2s;
 }
 
+
 .linha-container:hover {
     transform: translateY(-2px);
 }
+
 
 .linha-nome {
     font-weight: bold;
     font-size: 18px;
 }
 
+
 .status {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 
 .status-indicator {
     width: 16px;
@@ -69,29 +79,36 @@ h2 {
     display: inline-block;
 }
 
+
 .ativa {
     background-color: #4CAF50;
 }
+
 
 .inativa {
     background-color: #F44336;
 }
 
+
 .amarela {
     color: #FFD700;
 }
+
 
 .azul {
     color: #1E90FF;
 }
 
+
 .verde {
     color: #2E8B57;
 }
 
+
 .vermelha {
     color: #DC143C;
 }
+
 
 .container-trens {
     display: flex;
@@ -101,6 +118,7 @@ h2 {
     margin-top: 30px;
 }
 
+
 .card {
     background-color: white;
     border-radius: 10px;
@@ -109,8 +127,8 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    
 }
+
 
 .status-number {
     font-size: 1.5em;
@@ -118,6 +136,7 @@ h2 {
     color: #e74c3c;
     font-weight: bold;
 }
+
 
 .btn-ver, .btn-voltar {
     display: inline-block;
@@ -134,14 +153,16 @@ h2 {
     text-align: center;
 }
 
+
 .btn-ver:hover, .btn-voltar:hover {
     background-color: #2980b9;
 }
 
+
 .alertas {
     border-left: 5px solid #f39c12;
-    
 }
+
 
 #alert-message {
     font-size: 1.2em;
@@ -149,10 +170,13 @@ h2 {
 }
 
 
+
+
 #alert-time {
     color: #7f8c8d;
     font-size: 0.9em;
 }
+
 
 .trem-card {
     background-color: #f9f9f9;
@@ -163,10 +187,13 @@ h2 {
 }
 
 
+
+
 .trem-card h3 {
     margin-top: 0;
     color: #2c3e50;
 }
+
 
 .secao-linhas, .secao-trens {
     margin: 40px 0;
@@ -174,6 +201,7 @@ h2 {
     border-radius: 8px;
     background-color: #f8f9fa;
 }
+
 
 .secao-linhas h1, .secao-trens h1 {
     text-align: center;
