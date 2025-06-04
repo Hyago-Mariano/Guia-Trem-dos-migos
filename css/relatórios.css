@@ -1,53 +1,35 @@
-arrume essa responsividade 
-
-*{
+* {
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
-main{
+.container-info {
     padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-
-.container-info{
+.info {
     display: flex;
-    flex-direction: column;
+    margin-left: 30px;
     gap: 20px;
-    text-align: left;
-    
-}
-
-.container-info .box p{
-        margin: 0;
-        font-weight: 500;
-    }
-
-
-.container-info .box .img img {
-    width: 24px;
-    height: 24px;
-}
-
-.box{
-    display: flex;
-    background-color: #EAEAEA;
-    padding-left: 20px;
-    padding: 30px;
     justify-content: space-between;
-    width: 330px;
-    height: 90px;
-    border-radius: 25px;
 }
 
+.box-info {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    gap: 200px;
 
-.box .img{
-    width: 20px;
-    height: 20px;
-    max-width: 10px;
+}
+
+.box {
+    
+    flex: 1;
+    padding: 40px;
+    
+    background-color: #EAEAEA;
+    border-radius: 12px;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
