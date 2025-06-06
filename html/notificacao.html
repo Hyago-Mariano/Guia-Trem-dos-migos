@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monitoramento de Manutenção</title>
-    <link rel="stylesheet" href="../css/monitoramento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/notificacao.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Guia Trem</title>
 </head>
-
 <body>
     <header>
         <nav class="navbar bg-primary-emphasis fixed-top">
@@ -44,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header bg-primary-emphasis text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" fill="currentColor"
@@ -71,7 +67,7 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="dashboard.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -85,7 +81,7 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="gestao.html">Rotas</a>
+                                <a class="nav-link active" aria-current="page" href="#">Rotas</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -99,7 +95,7 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="monitoramento.html">Manutenção</a>
+                                <a class="nav-link active" aria-current="page" href="#">Manutenção</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -113,7 +109,7 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="relatorio.html">Relatórios</a>
+                                <a class="nav-link active" aria-current="page" href="#">Relatórios</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -127,132 +123,61 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="tecnico.html">Tecnico</a>
+                                <a class="nav-link active" aria-current="page" href="#">Tecnico</a>
                             </div>
                         </div>
                     </ul>
                 </div>
             </div>
             </div>
-        </nav>
+        </nav>       
     </header>
 
     <main>
-
-        <div class="localizacao-frota">
-            <h2>Localização da Frota</h2>
-            <canvas id="graficoRosca"></canvas>
-
-        </div>
-        <div class="alerta">
-            <h2>Alerta</h2>
-            <div id="alert-message">Não há alertas no momento.</div>
-            <div id="alert-time"></div>
-        </div>
-        <div class="flex">
-            <div class="manutencoes-andamento">
-                <h2>Manutenções</h2>
-                <h3>em andamento</h3>
-                <div class="flex">
-                    <div id="preventivas">
-                        <h1>12</h1>
-                        <hr>
-                        <h2>Preventivas</h2>
-                    </div>
-                    <div id="corretivas">
-                        <h1>1</h1>
-                        <hr>
-                        <h2>Corretivas</h2>
-                    </div>
+        <div class="container">
+            <div class="notification1">
+                <div class="header">
+                    <span>🔧 Nova manutenção solicitada</span>
+                    <span class="time">16 min</span>
                 </div>
+                <p>Manutenção solicitada</p>
+                <a href="#">Ver mais ▶</a>
             </div>
-            <div class="gasto-mensal">
-                <h2>Gasto mensal</h2>
-                <h3>das manutenções</h3>
-                <p>R$20mil</p>
-            </div>
-        </div>
-        <div class="manutencoes-programadas">
-            <h2>Manutenções Programadas</h2>
-            <div class="trem">
-                <div class="linha-nome azul">Trem 001 - Linha Azul</div>
-                <div class="data">25/04/2025</div>
-                <div class="status">
-                    <span class="status-indicator concluida"></span>
+    
+            <div class="notification">
+                <div class="header">
+                    <span>🖥 Atualização do sistema</span>
+                    <span class="time">26 min</span>
                 </div>
+                <p>O sistema foi atualizado</p>  
             </div>
-
-            <div class="trem">
-                <div class="linha-nome verde">Trem 003 - Linha Verde</div>
-                <div class="data">28/04/2025</div>
-                <div class="status">
-                    <span class="status-indicator andamento"></span>
+    
+            <div class="notification">
+                <div class="header">
+                    <span>🔧 Manutenção concluída</span>
+                    <span class="time">2 dias</span>
                 </div>
+                <p>A manutenção solicitada foi concluída</p>
             </div>
-
-            <div class="trem">
-                <div class="linha-nome amarela">Trem 002 - Linha Amarela</div>
-                <div class="data">02/05/2025</div>
-                <div class="status">
-                    <span class="status-indicator nao-iniciada"></span>
+    
+            <div class="notification">
+                <div class="header">
+                    <span>🖥 Atualização do sistema</span>
+                    <span class="time">4 dias</span>
                 </div>
+                <p>O sistema foi atualizado</p>
+                <a href="#">Ver mais ▶</a>
             </div>
-
-            <div class="legenda">
-                <div><span class="status-indicator concluida"></span> Concluída</div>
-                <div><span class="status-indicator andamento"></span> Em andamento</div>
-                <div><span class="status-indicator nao-iniciada"></span> Não iniciada</div>
+    
+            <div class="notification">
+                <div class="header">
+                    <span>🔧 Manutenção iniciada</span>
+                    <span class="time">1 sem</span>
+                </div>
+                <p>A manutenção foi iniciada</p>
+                <a href="#">Ver mais ▶</a>
             </div>
         </div>
-        <form action="" method="POST">
-            <div class="solicitar-manutencao">
-                <h2>Solicitar uma Manutenção</h2>
-                <label for="linha">Linha</label>
-                <select id="linha">
-                    <option>Selecione...</option>
-                    <option>Amarela</option>
-                    <option>Azul</option>
-                    <option>Verde</option>
-                    <option>Vermelha</option>
-                </select>
-
-                <label for="trem">Número do trem</label>
-                <select id="trem">
-                    <option>Selecione...</option>
-                    <option>001</option>
-                    <option>002</option>
-                    <option>003</option>
-                    <option>004</option>
-                </select>
-
-                <label for="manutencao">Tipo de manutenção</label>
-                <select id="manutencao">
-                    <option>Selecione...</option>
-                    <option>Preventiva</option>
-                    <option>Corretiva</option>
-                </select>
-
-                <label for="prioridade">Prioridade</label>
-                <select id="prioridade">
-                    <option>Selecione...</option>
-                    <option>A (crítico)</option>
-                    <option>B (importante)</option>
-                    <option>C (menos crítico)</option>
-                </select>
-
-                <label for="servico">Serviço a ser realizado</label>
-                <input type="text" id="servico" placeholder="Digite...">
-
-                <button type="submit" id="enviar" onclick="enviar()">Enviar solicitação</button>
-            </div>
-        </form>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="../js/monitoramento.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous">
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
-
-</html>
