@@ -25,6 +25,9 @@
     width: 25rem; /* 400px */
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+
+
 }
 
 .box h1 {
