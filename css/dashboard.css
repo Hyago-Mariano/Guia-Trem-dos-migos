@@ -1,23 +1,213 @@
-/* tudo feito aqui pode ser alterado, foi feito apenas para teste. ASS:hyago */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
 }
 
-.dashboard-header {
-    background-color: #4180AB;
-    color: white;
+.container {
+    max-width: 480px;
+    height: 820px;
+    margin: auto;
     padding: 20px;
+    background-color: #ffffff;
+}
+
+.mapa {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.mapa img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.alertas-prioritarios {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    background-color: #ffffff;
+    color: #004A98;
+}
+
+.localizacao-da-frota {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.atividades-recentes {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    color: #004A98;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.atividades-recentes h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #004A98;
+}
+
+.localizacao-da-frota h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #004A98;
+}
+
+.alertas-prioritarios h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #004A98;
+}
+
+.alertas-prioritarios h3 {
+    margin-top: 0;
+    color: #004A98;
+}
+
+.flex,
+.flex2,
+.flex3,
+.flex4,
+.flex5,
+.flex6 {
+    align-items: center;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    gap: 15px;
+}
+
+.flex2 {
+    display: flex;
+    width: 50%;
+    height: auto;
+    flex: 1;
+    align-items: center;
+}
+
+.flex2 h3 {
+    font-size: 20px;
+}
+
+.flex3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex3 p {
+    margin: 0;
+}
+
+.flexalerta {
+    margin: 0;
+}
+
+.flex4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex4 p {
+    margin: 0;
+}
+
+.flexrota {
+    margin: 0;
+}
+
+.flex5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex5 p {
+    margin: 0;
+}
+
+.flexmanutencao {
+    margin: 0;
+}
+
+.flex6 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.flex6 p {
+    margin: 0;
+}
+
+.flexprioritarios h4 {
+    margin: auto;
+    align-items: center;
+}
+
+.flexprioritarios {
+    margin: 0;
+}
+
+.ativa {
+    background-color: #004A98;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 50%;
     text-align: center;
+    padding: 10px;
+    color: #ffffff
 }
 
-.dashboard-content {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+.inativa {
+    background-color: #4180AB;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff
+}
+
+.navbar {
+    background-color: #4180AB !important;
 }
 
 .bg-primary-infe {
     background-color: #4180AB !important;
-  }
+}

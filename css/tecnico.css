@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.flex{
+    display: flex;
+}
+
+.agendar {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.agendar h2 {
+    font-size: 25px;
+    color: #4180AB;
+    margin-bottom: 20px;
+}
+
+select,
+input  {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #4a90c2;
+    color: white;
+    border-radius: 20px;
+    margin-top: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+#confirmar {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4a90c2;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.checklist {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #EAEAEA;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
