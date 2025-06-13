@@ -1,0 +1,10 @@
+{
+    "mergeEditor.showDeletionMarkers": false,
+    "chat.agent.enabled": false,
+    "chat.edits2.enabled": true,
+    "github.copilot.chat.agent.autoFix": false,
+    "github.copilot.chat.codeGeneration.useInstructionFiles": false,
+    "github.copilot.nextEditSuggestions.enabled": false,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never"
+}

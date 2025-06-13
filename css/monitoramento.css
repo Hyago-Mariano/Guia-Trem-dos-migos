@@ -295,3 +295,9 @@ input::placeholder {
 .bg-primary-infa {
     background-color: #4180AB !important;
 }
+
+.dropAzul {
+    background-color: #4a90c2 !important;
+    color: white !important;
+    border-radius: 20px !important;
+}

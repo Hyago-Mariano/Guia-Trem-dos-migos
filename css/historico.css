@@ -27,7 +27,7 @@ body {
 .filtro label {
     color: #004A98;
     font-weight: 500;
-    padding-top: 0px;
+    padding-top: 10px;
 }
 
 select,
@@ -79,4 +79,14 @@ input[type="text"] {
     cursor: pointer;
     font-weight: bold;
     transition: background-color 0.3s;
+}
+
+.dropAzul {
+    background-color: #4a90c2 !important;
+    color: white !important;
+    border-radius: 20px !important;
+}
+
+.bg-primary-infa {
+  background-color: #4180AB !important;
 }

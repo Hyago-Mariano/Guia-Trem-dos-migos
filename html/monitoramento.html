@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -47,7 +46,7 @@
 
             <div class="offcanvas offcanvas-end " tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header bg-primary-infa text-white">
+                <div class="offcanvas-header bg-primary-infa text-white gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="30" fill="currentColor"
                         class="bi bi-train-freight-front" viewBox="0 0 16 16">
                         <path
@@ -72,7 +71,7 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="dashboard.html">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="dashboard.html">Início</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -86,7 +85,7 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="gestao.html">Rotas</a>
+                                <a class="nav-link active" aria-current="page" href="gestao.html">Gestão de Rotas</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -100,7 +99,8 @@
                                 </li>
                             </div>
                             <div class="col">
-                                <a class="nav-link active" aria-current="page" href="monitoramento.html">Manutenção</a>
+                                <a class="nav-link active" aria-current="page" href="monitoramento.html">Monitoramento
+                                    de Manutenção</a>
                             </div>
                         </div>
                         <div class="row align-items-center">
@@ -229,51 +229,43 @@
         <form action="" method="POST">
             <div class="solicitar-manutencao">
                 <h2>Solicitar uma Manutenção</h2>
-                <div style="display: flex;">
-                    <label for="linha" style="margin-top: 10px; margin-right: 10px;">Linha</label>
-                    <select id="linha">
-                        <option>Selecione...</option>
-                        <option>Amarela</option>
-                        <option>Azul</option>
-                        <option>Verde</option>
-                        <option>Vermelha</option>
-                    </select>
-                </div>
 
-                <div style="display: flex;">
-                    <label for="trem" style="margin-top: 10px; margin-right: 10px;">Número do trem</label>
-                    <select id="trem">
-                        <option>Selecione...</option>
-                        <option>001</option>
-                        <option>002</option>
-                        <option>003</option>
-                        <option>004</option>
-                    </select>
-                </div>
+                <label for="linha">Linha</label>
+                <select class="form-select dropAzul" aria-label="Default select example">
+                    <option selected>Selecione...</option>
+                    <option value="1">Amarela</option>
+                    <option value="2">Azul</option>
+                    <option value="3">Verde</option>
+                    <option value="4">Vermelha</option>
+                </select>
 
-                <div style="display: flex;">
-                    <label for="manutencao" style="margin-top: 10px; margin-right: 10px;">Tipo de manutenção</label>
-                    <select id="manutencao">
-                        <option>Selecione...</option>
-                        <option>Preventiva</option>
-                        <option>Corretiva</option>
-                    </select>
-                </div>
+                <label for="trem">Número do trem</label>
+                <select class="form-select dropAzul" aria-label="Default select example">
+                    <option selected>Selecione...</option>
+                    <option value="1">001</option>
+                    <option value="2">002</option>
+                    <option value="3">003</option>
+                    <option value="4">004</option>
+                </select>
 
-                <div style="display: flex;">
-                    <label for="prioridade" style="margin-top: 10px; margin-right: 10px;">Prioridade</label>
-                    <select id="prioridade">
-                        <option>Selecione...</option>
-                        <option>A (crítico)</option>
-                        <option>B (importante)</option>
-                        <option>C (menos crítico)</option>
-                    </select>
-                </div>
+                <label for="manutencao">Tipo de manutenção</label>
+                <select class="form-select dropAzul" aria-label="Default select example">
+                    <option selected>Selecione...</option>
+                    <option value="1">Preventiva</option>
+                    <option value="2">Corretiva</option>
+                </select>
 
-                <div style="display: flex;">
-                    <label for="servico" style="margin-top: 10px; margin-right: 10px;">Serviço a ser realizado</label>
-                    <input type="text" id="servico" placeholder="Digite...">
-                </div>
+                <label for="prioridade">Prioridade</label>
+                <select class="form-select dropAzul" aria-label="Default select example">
+                    <option selected>Selecione...</option>
+                    <option value="1">A (crítico)</option>
+                    <option value="2">B (importante)</option>
+                    <option value="3">C (menos crítico)</option>
+                </select>
+
+                <label for="servico">Serviço a ser realizado</label>
+                <input type="text" id="servico" placeholder="Digite...">
+
 
                 <button type="submit" id="enviar" onclick="enviar()">Enviar solicitação</button>
             </div>
