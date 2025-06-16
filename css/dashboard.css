@@ -1,294 +1,492 @@
+/* Reset e configurações básicas */
 body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
+    padding-top: 76px;
 }
 
-.container {
-    max-width: 480px;
-    height: 820px;
-    margin: auto;
-    padding: 20px;
-    background-color: #ffffff;
+
+/* Layout principal */
+.main-content {
+    min-height: calc(100vh - 76px);
 }
 
+
+/* Container responsivo */
+.container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Mapa responsivo */
 .mapa-frame {
     width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.mapa-frame iframe {
+    width: 100%;
+    height: 250px;
+    border: 0;
     border-radius: 12px;
 }
 
 
-.mapa-frame {
-    width: 100%;
-    height: auto;
+/* Cards base */
+.card-custom {
+    padding: 1.5rem;
     border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #EAEAEA;
+    color: #4180AB;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.informacoes {
-    
+
+.card-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Títulos dos cards - TAMANHOS EQUILIBRADOS */
+.card-custom h2 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #4180AB;
+    font-weight: bold;
+}
+
+
+.card-custom h3 {
+    font-size: 1.1rem;
+    color: #4180AB;
+    margin-bottom: 0.75rem;
+    font-weight: bold;
+}
+
+
+/* Atividades Recentes */
+.atividades-recentes {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
+    gap: 0.75rem;
 }
 
-.alertas-prioritarios {
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+}
+
+
+.activity-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.activity-text {
     flex: 1;
-    padding: 33px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 50%;
-    background-color: #EAEAEA;
-    color: #4180AB;
 }
 
+
+.activity-text p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+
+/* Localização da Frota */
 .localizacao-da-frota {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.chart-container {
     flex: 1;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #EAEAEA;
-}
-
-.atividades-recentes {
-    flex: 1;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #EAEAEA;
-    color: #4180AB;
-}
-
-h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.atividades-recentes h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-    color: #4180AB;
-}
-
-.localizacao-da-frota h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-    color: #4180AB;
-}
-
-.alertas-prioritarios h2 {
-    margin-top: 0;
-    font-size: 1.2em;
-    color: #4180AB;
-}
-
-.alertas-prioritarios h3 {
-    margin-top: 0;
-    color: #4180AB;
-}
-
-.flex,
-.flex2,
-.flex3,
-.flex4,
-.flex5,
-.flex6 {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 200px;
 }
 
-svg {
-    display: block;
-    margin: auto;
-}
 
-.flex {
-    display: flex;
-    gap: 15px;
-}
-
-.flex2 {
-    display: flex;
-    width: 50%;
+#graficoRosca {
+    max-width: 100%;
     height: auto;
+}
+
+
+/* Alertas Prioritários - TAMANHOS EQUILIBRADOS */
+.alertas-prioritarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.alert-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     flex: 1;
-    align-items: center;
 }
 
-.flex2 h3 {
-    font-size: 20px;
-}
 
-.flex3 {
+.alert-icon {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 }
 
-.flex3 p {
+
+.alert-number h4 {
     margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4180AB;
 }
 
-.flexalerta {
-    margin: 0;
-}
 
-.flex4 {
+/* Linhas - TAMANHOS EQUILIBRADOS */
+.linhas {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    color: #4180AB;
 }
 
-.flex4 p {
-    margin: 0;
+
+.linhas h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
-.flexrota {
-    margin: 0;
-}
 
-.flex5 {
+.linhas-content {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1;
 }
 
-.flex5 p {
-    margin: 0;
-}
 
-.flexmanutencao {
-    margin: 0;
-}
-
-.flex6 {
+.linha-item {
+    flex: 1;
+    text-align: center;
+    padding: 1.25rem 0.75rem;
+    color: #ffffff;
     display: flex;
-    align-items: center;
-    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80px;
 }
 
-.flex6 p {
-    margin: 0;
-}
 
-.flexprioritarios h4 {
-    margin: auto;
-    align-items: center;
-}
-
-.flexprioritarios {
-    margin: 0;
-}
-
-.ativa {
+.linha-item.ativa {
     background-color: #004A98;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: #ffffff
 }
 
-.inativa {
+
+.linha-item.inativa {
     background-color: #4180AB;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    color: #ffffff
 }
 
+
+.linha-item h2 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.linha-item h3 {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+
+/* Navbar customizada */
 .navbar {
     background-color: #4180AB !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .bg-primary-infe {
     background-color: #4180AB !important;
 }
 
-.linhas {
+
+.navbar-brand {
+    font-size: 1.25rem;
+}
+
+
+/* Offcanvas menu */
+.offcanvas-body .nav-item {
+    margin-bottom: 0.5rem;
+}
+
+
+.offcanvas-body .nav-link {
+    padding: 0.75rem 0;
+    color: #333;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+}
+
+
+.offcanvas-body .nav-link:hover {
     color: #4180AB;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #EAEAEA;
-    border-radius: 8px;
-    padding: 10px;
 }
 
 
+.offcanvas-body .nav-link.active {
+    color: #4180AB;
+    font-weight: 500;
+}
 
-@media screen and (min-width: 600px) {
 
-    .container {
-        
-        align-items: center;
-        justify-content: center;
+/* Responsividade */
+
+
+/* Tablets */
+@media (min-width: 768px) {
+    .mapa-frame iframe {
+        height: 300px;
     }
 
-    .mapa-frame{
-        position: absolute;
-        top: 1rem;
-        left: 0;
-        right: 0;
+
+    .card-custom {
+        padding: 1.75rem;
+    }
+
+
+    .card-custom h2,
+    .card-custom h3 {
+        font-size: 1.2rem;
+    }
+
+
+    .activity-text p {
+        font-size: 0.95rem;
+    }
+
+
+    .alert-number h4 {
+        font-size: 2rem;
+    }
+
+
+    .linha-item {
+        padding: 1.5rem 1rem;
+        min-height: 100px;
+    }
+
+
+    .linha-item h2 {
+        font-size: 1.8rem;
+    }
+
+
+    .linha-item h3 {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 992px) {
+    body {
+        padding-top: 80px;
+    }
+
+
+    .main-content {
+        min-height: calc(100vh - 80px);
+    }
+
+
+    .mapa-frame iframe {
+        height: 350px;
+    }
+
+
+    .card-custom {
+        padding: 2rem;
+    }
+
+
+    .card-custom h2,
+    .card-custom h3 {
+        font-size: 1.3rem;
+    }
+
+
+    .activity-item {
+        padding: 0.75rem 0;
+    }
+
+
+    .activity-text p {
+        font-size: 1rem;
+    }
+
+
+    .chart-container {
+        min-height: 250px;
+    }
+
+
+    .alert-number h4 {
+        font-size: 2.2rem;
+    }
+
+
+    .linha-item {
+        padding: 2rem 1.5rem;
+        min-height: 120px;
+    }
+
+
+    .linha-item h2 {
+        font-size: 2rem;
+    }
+
+
+    .linha-item h3 {
+        font-size: 1rem;
+    }
+}
+
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .container-fluid {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+
+    .mapa-frame iframe {
         height: 400px;
-        z-index: 1;
     }
 
-    .mapa-frame{
-        height: 100%;
+    .alert-number h4 {
+        font-size: 2.5rem;
     }
 
-    .informacoes{
-        margin-top: 330px;
-        padding: 1rem;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
+    .linha-item h2 {
+        font-size: 2.25rem;
     }
-    
-    .informacoes .card-custom{
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-
-    .flex .card-custom{
-        padding-left: 20px;
-        
-    }
-
-    .localizacao-da-frota{
-
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-
 }
 
-@media screen and (max-width: 600px){
 
-   .flex{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .linhas{
-        padding-left: 70px;
-        padding-right: 70px;
-        
-    }
-
-
-
-
+/* Melhorias de acessibilidade e interação */
+.card-custom:focus-within {
+    outline: 2px solid #4180AB;
+    outline-offset: 2px;
 }
 
+
+.linha-item {
+    transition: background-color 0.2s ease;
+}
+
+
+.linha-item:hover {
+    filter: brightness(1.1);
+}
+
+
+/* Animações suaves */
+@media (prefers-reduced-motion: no-preference) {
+
+
+    .card-custom,
+    .linha-item,
+    .nav-link {
+        transition: all 0.2s ease;
+    }
+}
+
+
+/* Estados de loading para o gráfico */
+.chart-container:empty::before {
+    content: "Carregando gráfico...";
+    color: #4180AB;
+    font-style: italic;
+}
+
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 576px) {
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+
+    .card-custom {
+        padding: 1.25rem;
+    }
+
+
+    .card-custom h2,
+    .card-custom h3 {
+        font-size: 1rem;
+    }
+
+
+    .activity-item {
+        gap: 0.5rem;
+    }
+
+
+    .activity-text p {
+        font-size: 0.85rem;
+    }
+
+
+    .alert-content {
+        gap: 0.75rem;
+    }
+
+
+    .alert-number h4 {
+        font-size: 1.5rem;
+    }
+
+
+    .linha-item {
+        padding: 1rem 0.5rem;
+        min-height: 70px;
+    }
+
+
+    .linha-item h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .linha-item h3 {
+        font-size: 0.8rem;
+    }
+}

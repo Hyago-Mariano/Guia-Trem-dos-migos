@@ -6,12 +6,19 @@ body {
     background-color: #FFFFFF;
 }
 
+.container {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
 .flex {
     display: flex;
 }
 
 .agendar {
-    width: 100%;
+    width: 1850px;
     margin-top: 50px;
     margin-bottom: 20px;
     background-color: #EAEAEA;
@@ -99,3 +106,10 @@ input {
 .comentario {
     margin-top: 10px;
 }
+
+@media screen and (min-width: 600px) {
+    .agendar {
+        max-width: 100%;
+    }
+
+} 

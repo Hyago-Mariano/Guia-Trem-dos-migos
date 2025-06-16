@@ -304,11 +304,49 @@ input::placeholder {
 
 @media screen and (min-width: 600px){
 
-    .container{
-
-        
+    .container{        
         justify-content: center;
-
+        position: absolute;
+        left: 0;
+        right: 0;
     }
 
+    .localizacao-frota{
+        width: 100%;
+        height: 420px;
+    }
+
+    #graficoRosca{
+        position: absolute;
+        left: 50px;
+    }
+
+    .localizacao-frota h2{
+        position: absolute;
+        left: 50px;
+    }
+
+   
+
+    .txt_titulo{
+        
+        display: flex;
+        flex-wrap: wrap;
+        
+        gap: 5px;
+        justify-content: center;
+        
+    }
+
+
+    .txt_titulo h3{
+       margin-top: 10px;
+     }
+
+     .flex{
+        margin-top: 5px;
+        justify-content: center;
+     }
+
 }
+

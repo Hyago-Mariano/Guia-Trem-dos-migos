@@ -160,67 +160,67 @@
     </header>
 
     <main>
-        <div class="mapa-frame">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14305.21780163144!2d-48.847432713382446!3d-26.31663938178757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb17917615d17%3A0xc4ff5570e603a778!2zU2VkZSBkYSBFc3Rhw6fDo28gZGEgTWVtw7NyaWEg8J-agg!5e0!3m2!1spt-BR!2sbr!4v1748962422860!5m2!1spt-BR!2sbr"
-                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <div class="container">
+        <div class="container-fluid">
+            <div class="row mapa-frame">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14305.21780163144!2d-48.847432713382446!3d-26.31663938178757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94deb17917615d17%3A0xc4ff5570e603a778!2zU2VkZSBkYSBFc3Rhw6fDo28gZGEgTWVtw7NyaWEg8J-agg!5e0!3m2!1spt-BR!2sbr!4v1748962422860!5m2!1spt-BR!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="col-12">
+                    <div class="linhas">
+                        <h2>Linhas</h2>
 
-            <div class="linhas">
-                <h2>Linhas</h2>
+                        <div class="col-12 linha-container" data-linha="amarela">
+                            <div class="linha-nome amarela">Linha Amarela</div>
+                            <div class="status">
+                                <span class="status-text">Ativa</span>
+                                <span class="status-indicator ativa"></span>
+                            </div>
+                        </div>
 
-                <div class="linha-container" data-linha="amarela">
-                    <div class="linha-nome amarela">Linha Amarela</div>
-                    <div class="status">
-                        <span class="status-text">Ativa</span>
-                        <span class="status-indicator ativa"></span>
+                        <div class="col-12 linha-container" data-linha="azul">
+                            <div class="linha-nome azul">Linha Azul</div>
+                            <div class="status">
+                                <span class="status-text">Ativa</span>
+                                <span class="status-indicator ativa"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 linha-container" data-linha="verde">
+                            <div class="linha-nome verde">Linha Verde</div>
+                            <div class="status">
+                                <span class="status-text">Ativa</span>
+                                <span class="status-indicator ativa"></span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 linha-container" data-linha="vermelha">
+                            <div class="linha-nome vermelha">Linha Vermelha</div>
+                            <div class="status">
+                                <span class="status-text">Ativa</span>
+                                <span class="status-indicator ativa"></span>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
-                <div class="linha-container" data-linha="azul">
-                    <div class="linha-nome azul">Linha Azul</div>
-                    <div class="status">
-                        <span class="status-text">Ativa</span>
-                        <span class="status-indicator ativa"></span>
+                <div class="flex col-12">
+                    <div class="manutencoes">
+                        <h2>Trens em <br> Manutenção</h2>
+                        <p style="color: red; font-weight: bold; font-size: 20px;">4 trens em manutenção</p>
+                        <a href="monitoramento.html" class="botao">Clique para visualizar</a>
                     </div>
-                </div>
-
-                <div class="linha-container" data-linha="verde">
-                    <div class="linha-nome verde">Linha Verde</div>
-                    <div class="status">
-                        <span class="status-text">Ativa</span>
-                        <span class="status-indicator ativa"></span>
+                    <div class="alertas">
+                        <h2>Alertas</h2>
+                        <div id="alert-message">Não há alertas no momento.</div>
+                        <div id="alert-time"></div>
                     </div>
-                </div>
-
-                <div class="linha-container" data-linha="vermelha">
-                    <div class="linha-nome vermelha">Linha Vermelha</div>
-                    <div class="status">
-                        <span class="status-text">Ativa</span>
-                        <span class="status-indicator ativa"></span>
-                    </div>
-
                 </div>
             </div>
-
-            <div class="flex">
-                <div class="manutencoes">
-                    <h2>Trens em <br> Manutenção</h2>
-                    <p style="color: red; font-weight: bold; font-size: 20px;">4 trens em manutenção</p>
-                    <a href="monitoramento.html" class="botao">Clique para visualizar</a>
-                </div>
-
-                <div class="alertas">
-                    <h2>Alertas</h2>
-                    <div id="alert-message">Não há alertas no momento.</div>
-                    <div id="alert-time"></div>
-                </div>
-            </div>
         </div>
-
     </main>
 
     <script src="../js/gestao.js"></script>

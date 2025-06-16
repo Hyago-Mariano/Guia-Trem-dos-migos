@@ -158,62 +158,64 @@
     </header>
 
     <main>
-        <div class="agendar">
-            <h2>Agendar Manutenção</h2>
-            <form action="" method="POST">
-                <select class="form-select dropAzul" aria-label="Default select example">
-                    <label for="solicitadas"></label>
-                    <option selected>Manutenções Solicitadas</option>
-                    <option value="1">Trem 001 Linha Amarela Corretiva A</option>
-                    <option value="2">Trem 002 Linha Azul Corretiva B</option>
-                    <option value="3">Trem 003 Linha Verde Preventiva C</option>
-                    <option value="4">Trem 004 Linha Vermelha Preventiva C</option>
-                </select>
+        <div class="container">
+            <div class="agendar">
+                <h2>Agendar Manutenção</h2>
+                <form action="" method="POST">
+                    <select class="form-select dropAzul" aria-label="Default select example">
+                        <label for="solicitadas"></label>
+                        <option selected>Manutenções Solicitadas</option>
+                        <option value="1">Trem 001 Linha Amarela Corretiva A</option>
+                        <option value="2">Trem 002 Linha Azul Corretiva B</option>
+                        <option value="3">Trem 003 Linha Verde Preventiva C</option>
+                        <option value="4">Trem 004 Linha Vermelha Preventiva C</option>
+                    </select>
 
-                <label for="data">Selecione a data:</label>
-                <input type="date" id="data" name="data">
+                    <label for="data">Selecione a data:</label>
+                    <input type="date" id="data" name="data">
 
-                <label for="servico">Serviço a ser realizado</label>
-                <input type="text" id="servico" placeholder="Digite...">
+                    <label for="servico">Serviço a ser realizado</label>
+                    <input type="text" id="servico" placeholder="Digite...">
 
 
-                <button type="submit" id="confirmar" onclick="confirmar()">Confirmar</button>
-            </form>
-        </div>
+                    <button type="submit" id="confirmar" onclick="confirmar()">Confirmar</button>
+                </form>
+            </div>
 
-        <div class="checklist">
-            <h2>Checklist</h2>
-            <form action="" method="post">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault">
-                        Verificação inicial do problema
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault">
-                        Teste funcional antes da troca
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault">
-                        Substituição/reparo realizado
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="checkDefault">
-                    <label class="form-check-label" for="checkDefault">
-                        Teste funcional pós-manutenção
-                    </label>
-                </div>
+            <div class="checklist">
+                <h2>Checklist</h2>
+                <form action="" method="post">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Verificação inicial do problema
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Teste funcional antes da troca
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Substituição/reparo realizado
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                        <label class="form-check-label" for="checkDefault">
+                            Teste funcional pós-manutenção
+                        </label>
+                    </div>
 
-                <label for="servico" class="co">Comentário do técnico</label>
-                <input type="text" id="servico" placeholder="Digite..."></input>
+                    <label for="servico" class="co">Comentário do técnico</label>
+                    <input type="text" id="servico" placeholder="Digite..."></input>
 
-                <button type="submit" id="confirmar" onclick="confirmar()">Concluir Manutenção</button>
-            </form>
+                    <button type="submit" id="confirmar" onclick="confirmar()">Concluir Manutenção</button>
+                </form>
+            </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
