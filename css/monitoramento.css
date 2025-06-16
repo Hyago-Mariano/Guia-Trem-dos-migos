@@ -301,3 +301,14 @@ input::placeholder {
     color: white !important;
     border-radius: 20px !important;
 }
+
+@media screen and (min-width: 600px){
+
+    .container{
+
+        
+        justify-content: center;
+
+    }
+
+}

@@ -26,6 +26,7 @@ body {
 }
 
 .informacoes {
+    
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -212,16 +213,6 @@ svg {
     background-color: #4180AB !important;
 }
 
-@media screen and (min-width: 600px) {
-
-    .container {
-
-        align-items: center;
-
-    }
-
-}
-
 .linhas {
     color: #4180AB;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -229,3 +220,75 @@ svg {
     border-radius: 8px;
     padding: 10px;
 }
+
+
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mapa-frame{
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        height: 400px;
+        z-index: 1;
+    }
+
+    .mapa-frame{
+        height: 100%;
+    }
+
+    .informacoes{
+        margin-top: 330px;
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .informacoes .card-custom{
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .flex .card-custom{
+        padding-left: 20px;
+        
+    }
+
+    .localizacao-da-frota{
+
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+   .flex{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .linhas{
+        padding-left: 70px;
+        padding-right: 70px;
+        
+    }
+
+
+
+
+}
+

@@ -88,5 +88,17 @@ input[type="text"] {
 }
 
 .bg-primary-infa {
-  background-color: #4180AB !important;
+    background-color: #4180AB !important;
+}
+
+@media screen and (min-width: 600px) {
+
+    .container {
+        position: absolute;
+        justify-content: center;
+        left: 0;
+        right: 0;
+
+    }
+
 }
