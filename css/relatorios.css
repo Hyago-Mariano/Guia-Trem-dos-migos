@@ -28,9 +28,7 @@ body {
     width: 25rem;
     display: flex;
     align-items: center;
-    /* Alinha verticalmente */
     justify-content: center;
-    /* Centraliza horizontalmente */
     margin-bottom: 10px;
     padding: 20px;
 }
@@ -39,10 +37,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Alinha verticalmente h1 e img */
     width: 100%;
     height: 60px;
-
 }
 
 .box h1 {

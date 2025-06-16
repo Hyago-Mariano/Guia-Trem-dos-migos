@@ -1,4 +1,3 @@
-
 .flex {
     display: flex;
 }
@@ -18,6 +17,8 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .localizacao-frota h2 {
@@ -37,6 +38,8 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .alerta h2 {
@@ -62,6 +65,8 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .manutencoes-andamento h2 {
@@ -122,6 +127,8 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .gasto-mensal h2 {
@@ -149,6 +156,8 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .manutencoes-programadas h2 {
@@ -169,6 +178,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 #historico a {
@@ -237,6 +247,8 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .solicitar-manutencao h2 {
@@ -302,51 +314,60 @@ input::placeholder {
     border-radius: 20px !important;
 }
 
-@media screen and (min-width: 600px){
 
-    .container{        
+@media screen and (min-width: 600px) {
+
+    .container {
         justify-content: center;
         position: absolute;
         left: 0;
         right: 0;
     }
 
-    .localizacao-frota{
+    .localizacao-frota {
         width: 100%;
         height: 420px;
     }
 
-    #graficoRosca{
+    #graficoRosca {
         position: absolute;
         left: 50px;
     }
 
-    .localizacao-frota h2{
+    .localizacao-frota h2 {
         position: absolute;
         left: 50px;
     }
 
-   
 
-    .txt_titulo{
-        
+
+    .txt_titulo {
+
         display: flex;
         flex-wrap: wrap;
-        
+
         gap: 5px;
         justify-content: center;
-        
+
     }
 
 
-    .txt_titulo h3{
-       margin-top: 10px;
-     }
+    .txt_titulo h3 {
+        margin-top: 10px;
+    }
 
-     .flex{
+    .flex {
         margin-top: 5px;
         justify-content: center;
-     }
-
+    }
 }
 
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+
+        flex-wrap: wrap;
+        gap: 2px;
+    }
+
+}

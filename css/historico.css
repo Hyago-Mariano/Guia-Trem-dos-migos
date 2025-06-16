@@ -17,6 +17,7 @@ body {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .filtro h2 {
@@ -51,6 +52,7 @@ input[type="text"] {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .historico p {
@@ -101,6 +103,6 @@ input[type="text"] {
 
     }
 
-    
+
 
 }

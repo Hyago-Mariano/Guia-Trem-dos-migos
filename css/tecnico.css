@@ -18,12 +18,12 @@ body {
 }
 
 .agendar {
-    width: 1850px;
     margin-top: 50px;
     margin-bottom: 20px;
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .agendar h2 {
@@ -78,6 +78,7 @@ input {
     background-color: #EAEAEA;
     border-radius: 8px;
     padding: 10px 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .checklist h2 {
@@ -108,8 +109,14 @@ input {
 }
 
 @media screen and (min-width: 600px) {
-    .agendar {
+    /* .agendar {
         max-width: 100%;
-    }
+    } */
 
-} 
+    .container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        justify-content: center;
+    }
+}
